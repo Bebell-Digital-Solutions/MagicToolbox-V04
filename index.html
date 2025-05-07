@@ -549,7 +549,7 @@ li span:nth-child(n) {
 let lastScrollTime = 0;
 let scrollTimeout;
 const tickSound = document.getElementById('tickSound');
-const scrollThreshold = 7; // Reduced from 100 to 10 for faster response
+const scrollThreshold = 50; // Reduced from 100 to 10 for faster response
 
 function playTick() {
     tickSound.currentTime = 0;

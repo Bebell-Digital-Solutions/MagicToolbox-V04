@@ -248,6 +248,11 @@ li span:nth-child(n) {
         li:nth-child(25) { rotate: 375.64deg; }
         li:nth-child(26) { rotate: 391.29deg; }
         li:nth-child(27) { rotate: 406.94deg; }
+        li:nth-child(28) { rotate: 422.59deg; }  /* 406.94 + 15.65 */
+
+
+
+        
 
         li a {
             text-decoration: none;
@@ -407,6 +412,20 @@ li span:nth-child(n) {
             transform-origin: var(--x) 0;
             transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 26) ease-out;
         }
+
+li span:nth-child(28) {
+    --y: calc((28 * -20px) * var(--rotate-velocity));  /* Next increment */
+    transform-origin: var(--x) 0;
+    transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 27) ease-out;
+}
+
+
+
+
+
+
+
+        
 
         em {
           display: block;

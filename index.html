@@ -29,6 +29,8 @@
             }
         }
 
+        
+
         :root {
           --circle-size: 30vmin;
           --spacing: 3vmin;
@@ -36,6 +38,8 @@
           --ease-speed: 50ms;
           --logo-size: 18vmin;
         }
+
+        
 
         body {
             height: 1080vh;
@@ -50,6 +54,8 @@
             animation-timeline: scroll(nearest block);
             cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23ebff00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>'), auto;
         }
+
+        
 
         /* Popup Styles */
         .popup-overlay {
@@ -136,6 +142,8 @@
             justify-content: center;
             position: relative;
         }
+
+        
         
         /* Homepage tooltip */
         .logo-container a::after {
@@ -155,6 +163,8 @@
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
             z-index: 10;
         }
+
+        
 
         .logo-container:hover a::after {
             opacity: 1;
@@ -576,7 +586,7 @@ window.addEventListener('wheel', (e) => {
     
     // Faster timeout clearing
     clearTimeout(scrollTimeout);
-    scrollTimeout = setTimeout(() => tickSound.pause(), 50); // Reduced from 200ms
+    scrollTimeout = setTimeout(() => tickSound.pause(), 200); // Reduced from 200ms
 });
 
 

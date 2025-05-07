@@ -266,6 +266,12 @@ li span:nth-child(n) {
             text-shadow: 0 1 18px rgba(235, 255, 0, 0.4);
         }
 
+
+
+
+
+        
+
         li span {
           --rotate-velocity: calc(var(--rotate) - var(--delayed-rotate));
           --rotate-spacing: calc(var(--spacing) * -4 * var(--rotate-velocity));
@@ -407,15 +413,12 @@ li span:nth-child(n) {
             transform-origin: var(--x) 0;
             transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 25) ease-out;
         }
-        li span:nth-child(27) {
-            --y: calc((27 * -20px) * var(--rotate-velocity));
-            transform-origin: var(--x) 0;
-            transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 26) ease-out;
-        }
-
+      li span:nth-child(27) {
+    --y: calc((26 * -20px) * var(--rotate-velocity)); /* Corrected from 27 to 26 */
+    transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 26) ease-out;
+}
 li span:nth-child(28) {
-    --y: calc((28 * -20px) * var(--rotate-velocity));  /* Next increment */
-    transform-origin: var(--x) 0;
+    --y: calc((27 * -20px) * var(--rotate-velocity));
     transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 27) ease-out;
 }
 

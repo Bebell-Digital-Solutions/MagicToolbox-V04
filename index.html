@@ -98,11 +98,15 @@
             color: #000;
         }
 
+
+        
         /* Bigger cursor on hover */
         a:hover, .logo-container:hover {
             cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="%23ebff00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6" fill="%23ebff00"/></svg>'), auto;
         }
 
+
+        
         .logo-container {
             position: fixed;
             left: 50%;
@@ -166,7 +170,7 @@
         
         // Add this to your CSS for smoother animation:
 :root {
-    --ease-speed: 10ms; // Reduced from 50ms for faster letter movement
+    --ease-speed: 50ms; // Reduced from 50ms for faster letter movement
 }
         
         
@@ -549,7 +553,7 @@ li span:nth-child(n) {
 let lastScrollTime = 0;
 let scrollTimeout;
 const tickSound = document.getElementById('tickSound');
-const scrollThreshold = 50; // Reduced from 100 to 10 for faster response
+const scrollThreshold = 100; // Reduced from 100 to 10 for faster response
 
 function playTick() {
     tickSound.currentTime = 0;
